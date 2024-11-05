@@ -1,0 +1,178 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "MacBook Pro 14",
+        "product_image": "https://i.ibb.co/9qFz4R5/laptop-1.jpg",
+        "category": "Laptops",
+        "price": 2499.99,
+        "description": "The new MacBook Pro 14 with M1 Pro chip for powerful performance.",
+        "specification": ["M1 Pro chip", "14-inch Retina display", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 2,
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co.com/NpR119w/laptop-2.jpg",
+        "category": "Laptops",
+        "price": 1399.99,
+        "description": "Dell XPS 13 with 11th Gen Intel Core i7 processor and stunning display.",
+        "specification": ["Intel Core i7", "13.4-inch FHD+ display", "16GB RAM", "512GB SSD"],
+        "availability": false,
+        "rating": 4.4
+    },
+    {
+        "product_id": 3,
+        "product_title": "iPhone 14 Pro",
+        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "category": "Phones",
+        "price": 1099.99,
+        "description": "iPhone 14 Pro with a new 48MP main camera and A16 Bionic chip.",
+        "specification": ["6.1-inch Super Retina XDR display", "48MP main camera", "A16 Bionic chip", "5G enabled"],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "product_id": 4,
+        "product_title": "Samsung Galaxy S23",
+        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "category": "Phones",
+        "price": 999.99,
+        "description": "Samsung Galaxy S23 with AMOLED display and Snapdragon 8 Gen 2 processor.",
+        "specification": ["6.2-inch AMOLED display", "Triple camera setup", "Snapdragon 8 Gen 2", "5G enabled"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 5,
+        "product_title": "Google Pixel 7",
+        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "category": "Phones",
+        "price": 899.99,
+        "description": "Google Pixel 7 with Google Tensor chip and exceptional low-light camera.",
+        "specification": ["6.3-inch OLED display", "50MP dual camera", "Google Tensor chip", "5G enabled"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 6,
+        "product_title": "OnePlus 11",
+        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "category": "Phones",
+        "price": 799.99,
+        "description": "OnePlus 11 with fast performance and ultra-smooth display.",
+        "specification": ["6.7-inch AMOLED display", "50MP camera", "Snapdragon 8 Gen 2", "120Hz refresh rate"],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 7,
+        "product_title": "Sony Xperia 1 IV",
+        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "category": "Phones",
+        "price": 1199.99,
+        "description": "Sony Xperia 1 IV with 4K OLED display and professional-grade camera.",
+        "specification": ["6.5-inch 4K OLED display", "Triple camera", "Snapdragon 8 Gen 1", "5G enabled"],
+        "availability": false,
+        "rating": 4.3
+    },
+    {
+        "product_id": 8,
+        "product_title": "Xiaomi Mi 12",
+        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "category": "Phones",
+        "price": 749.99,
+        "description": "Xiaomi Mi 12 with powerful processor and exceptional battery life.",
+        "specification": ["6.28-inch AMOLED display", "50MP camera", "Snapdragon 8 Gen 1", "67W fast charging"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 9,
+        "product_title": "Apple Watch Series 8",
+        "product_image": "https://i.ibb.co.com/dGh5gsP/kiran-ck-Uk-O7-K1-CPFS8-unsplash-1.jpg",
+        "category": "Smartwatches",
+        "price": 399.99,
+        "description": "Apple Watch Series 8 with advanced health monitoring and improved performance.",
+        "specification": ["Health monitoring", "GPS", "Water-resistant", "Always-on Retina display"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 10,
+        "product_title": "Samsung Galaxy Watch 5",
+        "product_image": "https://i.ibb.co.com/dGh5gsP/kiran-ck-Uk-O7-K1-CPFS8-unsplash-1.jpg",
+        "category": "Smartwatches",
+        "price": 279.99,
+        "description": "Samsung Galaxy Watch 5 with health monitoring and 80-hour battery life.",
+        "specification": ["AMOLED display", "Health tracking", "GPS", "Water-resistant"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 11,
+        "product_title": "Sony WH-1000XM4",
+        "product_image": "https://i.ibb.co.com/pyVNsXD/q5gy2-RSo-RIw-Rm-FPLELLX2bu5e3-XUCBPH8-Dtxj-VGN.jpg",
+        "category": "Accessories",
+        "price": 349.99,
+        "description": "Sony's top noise-canceling headphones with 30 hours of battery life.",
+        "specification": ["Noise-canceling", "30 hours battery life", "Bluetooth 5.0", "Quick charge"],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "product_id": 12,
+        "product_title": "Anker PowerCore 26800mAh",
+        "product_image": "https://i.ibb.co.com/RT92TFN/61-RZa3chka-L.jpg",
+        "category": "Accessories",
+        "price": 65.99,
+        "description": "Anker PowerCore portable charger with high capacity and fast charging.",
+        "specification": ["26800mAh capacity", "Fast charging", "Dual USB ports", "Portable design"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 13,
+        "product_title": "Nokia G20",
+        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "category": "Phones",
+        "price": 349.99,
+        "description": "Nokia G20 with a long-lasting battery and solid performance.",
+        "specification": ["6.5-inch HD+ display", "48MP quad camera", "5000mAh battery", "Android 11"],
+        "availability": true,
+        "rating": 4.1
+    },
+    {
+        "product_id": 14,
+        "product_title": "Motorola Moto G Power",
+        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "category": "Phones",
+        "price": 249.99,
+        "description": "Motorola Moto G Power with a 5000mAh battery for all-day use.",
+        "specification": ["6.6-inch HD display", "50MP camera", "5000mAh battery", "Android 11"],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": 15,
+        "product_title": "Asus Zenfone 9",
+        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "category": "Phones",
+        "price": 699.99,
+        "description": "Asus Zenfone 9 with compact design and flagship performance.",
+        "specification": ["5.9-inch AMOLED display", "50MP camera", "Snapdragon 8+ Gen 1", "5000mAh battery"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 16,
+        "product_title": "Realme GT 2 Pro",
+        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "category": "Phones",
+        "price": 599.99,
+        "description": "Realme GT 2 Pro with Snapdragon 8 Gen 1 and high refresh rate display.",
+        "specification": ["6.7-inch AMOLED display", "50MP triple camera", "Snapdragon 8 Gen 1", "65W fast charging"],
+        "availability": true,
+        "rating": 4.4
+    }]
+    
