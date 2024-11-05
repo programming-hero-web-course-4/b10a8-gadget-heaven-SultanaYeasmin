@@ -9,4 +9,4 @@ const CommonHeading = ({title, subtitle}) => {
     );
 };
 
-export default CommonHeading;h
+export default CommonHeading;
