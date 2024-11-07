@@ -2,19 +2,24 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import ProductDetails from './pages/ProductDetails';
-// import ErrorPage from "./error-page";
 
+import ErrorPage from './components/ErrorPage';
 import { createBrowserRouter,RouterProvider,} from "react-router-dom";
 import Layout from './layout/Layout';
 import Home from './pages/Home';
 import Statistics from './pages/Statistics';
 import Dashboard from './pages/Dashboard';
 import Cards from './components/Cards';
+import ContactUs from './pages/ContactUs';
+
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -42,6 +47,11 @@ const router = createBrowserRouter([
         path: '/dashboard',
         element: <Dashboard />,
         loader: () => fetch ('../products.json'),
+      },
+      {
+        path: '/contact',
+        element: <ContactUs></ContactUs>,
+        
       },
       {
         path: '/product/:id',

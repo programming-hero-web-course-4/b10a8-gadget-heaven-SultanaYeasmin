@@ -2,10 +2,11 @@ import React from 'react';
 import Banner from '../components/Banner';
 import Heading from '../components/Heading';
 
-import { Outlet, useLoaderData } from 'react-router-dom';
+import { Outlet, useLoaderData, useNavigate } from 'react-router-dom';
 import Categories from '../components/Categories';
 
 const Home = () => {
+    const navigate = useNavigate();
     const categories = useLoaderData();
     console.log(categories)
     return (
@@ -16,7 +17,7 @@ const Home = () => {
                     subtitle='Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'>
                 </Heading>
                 <div className='flex justify-center'>
-                    <button className="bg-white text-[#9538E2] btn btn-wide">Shop Now</button>
+                    <button onClick={()=>navigate('/dashboard')} className="bg-white text-[#9538E2] btn btn-wide">Shop Now</button>
                 </div>
                 <Banner></Banner>
             </div>

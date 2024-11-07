@@ -7,7 +7,7 @@
         "price": 2499.99,
         "description": "The new MacBook Pro 14 with M1 Pro chip for powerful performance.",
         "specification": ["M1 Pro chip", "14-inch Retina display", "16GB RAM", "512GB SSD"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.8
     },
     {
@@ -18,7 +18,7 @@
         "price": 1399.99,
         "description": "Dell XPS 13 with 11th Gen Intel Core i7 processor and stunning display.",
         "specification": ["Intel Core i7", "13.4-inch FHD+ display", "16GB RAM", "512GB SSD"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.4
     },
     {
@@ -29,7 +29,7 @@
         "price": 1099.99,
         "description": "iPhone 14 Pro with a new 48MP main camera and A16 Bionic chip.",
         "specification": ["6.1-inch Super Retina XDR display", "48MP main camera", "A16 Bionic chip", "5G enabled"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.7
     },
     {
@@ -40,7 +40,7 @@
         "price": 999.99,
         "description": "Samsung Galaxy S23 with AMOLED display and Snapdragon 8 Gen 2 processor.",
         "specification": ["6.2-inch AMOLED display", "Triple camera setup", "Snapdragon 8 Gen 2", "5G enabled"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.5
     },
     {
@@ -51,7 +51,7 @@
         "price": 899.99,
         "description": "Google Pixel 7 with Google Tensor chip and exceptional low-light camera.",
         "specification": ["6.3-inch OLED display", "50MP dual camera", "Google Tensor chip", "5G enabled"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.6
     },
     {
@@ -62,7 +62,7 @@
         "price": 799.99,
         "description": "OnePlus 11 with fast performance and ultra-smooth display.",
         "specification": ["6.7-inch AMOLED display", "50MP camera", "Snapdragon 8 Gen 2", "120Hz refresh rate"],
-        "availability": "Not in Stock",
+        "availability": false,
         "rating": 4.4
     },
     {
@@ -73,7 +73,7 @@
         "price": 1199.99,
         "description": "Sony Xperia 1 IV with 4K OLED display and professional-grade camera.",
         "specification": ["6.5-inch 4K OLED display", "Triple camera", "Snapdragon 8 Gen 1", "5G enabled"],
-        "availability": "Not In Stock",
+        "availability": false,
         "rating": 4.3
     },
     {
@@ -84,7 +84,7 @@
         "price": 749.99,
         "description": "Xiaomi Mi 12 with powerful processor and exceptional battery life.",
         "specification": ["6.28-inch AMOLED display", "50MP camera", "Snapdragon 8 Gen 1", "67W fast charging"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.5
     },
     {
@@ -95,7 +95,7 @@
         "price": 399.99,
         "description": "Apple Watch Series 8 with advanced health monitoring and improved performance.",
         "specification": ["Health monitoring", "GPS", "Water-resistant", "Always-on Retina display"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.6
     },
     {
@@ -106,7 +106,7 @@
         "price": 279.99,
         "description": "Samsung Galaxy Watch 5 with health monitoring and 80-hour battery life.",
         "specification": ["AMOLED display", "Health tracking", "GPS", "Water-resistant"],
-        "availability":"In Stock",
+        "availability":true,
         "rating": 4.5
     },
     {
@@ -117,7 +117,7 @@
         "price": 349.99,
         "description": "Sony's top noise-canceling headphones with 30 hours of battery life.",
         "specification": ["Noise-canceling", "30 hours battery life", "Bluetooth 5.0", "Quick charge"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.6
     },
     {
@@ -128,7 +128,7 @@
         "price": 65.99,
         "description": "Anker PowerCore portable charger with high capacity and fast charging.",
         "specification": ["26800mAh capacity", "Fast charging", "Dual USB ports", "Portable design"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.8
     },
     {
@@ -139,7 +139,7 @@
         "price": 349.99,
         "description": "Nokia G20 with a long-lasting battery and solid performance.",
         "specification": ["6.5-inch HD+ display", "48MP quad camera", "5000mAh battery", "Android 11"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.1
     },
     {
@@ -150,7 +150,7 @@
         "price": 249.99,
         "description": "Motorola Moto G Power with a 5000mAh battery for all-day use.",
         "specification": ["6.6-inch HD display", "50MP camera", "5000mAh battery", "Android 11"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.2
     },
     {
@@ -161,7 +161,7 @@
         "price": 699.99,
         "description": "Asus Zenfone 9 with compact design and flagship performance.",
         "specification": ["5.9-inch AMOLED display", "50MP camera", "Snapdragon 8+ Gen 1", "5000mAh battery"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.5
     },
     {
@@ -172,7 +172,7 @@
         "price": 599.99,
         "description": "Realme GT 2 Pro with Snapdragon 8 Gen 1 and high refresh rate display.",
         "specification": ["6.7-inch AMOLED display", "50MP triple camera", "Snapdragon 8 Gen 1", "65W fast charging"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.4
     },
     {
@@ -183,7 +183,7 @@
         "price": 1199.99,
         "description": "The new MacBook Air with the powerful M2 chip, designed for portability and performance.",
         "specification": ["M2 chip", "13.6-inch Liquid Retina display", "8GB RAM", "256GB SSD"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.7
     },
     
@@ -195,7 +195,7 @@
         "price": 2499.99,
         "description": "The new MacBook Pro 14 with M1 Pro chip for powerful performance.",
         "specification": ["M1 Pro chip", "14-inch Retina display", "16GB RAM", "512GB SSD"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.8
     },
     {
@@ -206,7 +206,7 @@
         "price": 1099.99,
         "description": "iPhone 14 Pro with a 48MP main camera and A16 Bionic chip.",
         "specification": ["6.1-inch Super Retina XDR display", "48MP main camera", "A16 Bionic chip", "5G enabled"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.8
     },
     {
@@ -217,7 +217,7 @@
         "price": 799.99,
         "description": "iPhone 14 with advanced dual-camera system and A15 Bionic chip.",
         "specification": ["6.1-inch Super Retina XDR display", "Dual 12MP cameras", "A15 Bionic chip", "5G enabled"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.6
     },
     {
@@ -228,7 +228,7 @@
         "price": 999.99,
         "description": "iPhone 13 Pro with ProMotion display and A15 Bionic chip for smoother performance.",
         "specification": ["6.1-inch Super Retina XDR display", "ProMotion technology", "A15 Bionic chip", "5G enabled"],
-        "availability": "Out of Stock",
+        "availability": false,
         "rating": 4.7
     },
     {
@@ -239,7 +239,7 @@
         "price": 429.99,
         "description": "Compact iPhone SE with powerful A15 Bionic chip and 5G capability.",
         "specification": ["4.7-inch Retina HD display", "12MP camera", "A15 Bionic chip", "5G enabled"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.4
     },
     {
@@ -250,7 +250,7 @@
         "price": 699.99,
         "description": "iPhone 12 with A14 Bionic chip and edge-to-edge OLED display.",
         "specification": ["6.1-inch Super Retina XDR display", "Dual 12MP cameras", "A14 Bionic chip", "5G enabled"],
-        "availability": "In Stock",
+        "availability": true,
         "rating": 4.5
     }
     
