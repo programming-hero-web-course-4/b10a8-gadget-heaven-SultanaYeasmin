@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import CommonHeading from '../components/CommonHeading'; import { FaRegStar } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
+import { addToStoredCartList, addToStoredWishList } from '../utilities/localStorage';
 
 const ProductDetails = () => {
     const products = useLoaderData();
@@ -20,6 +21,18 @@ const ProductDetails = () => {
         price, description, specification, availability, rating } = singleProductForDetails || {};
 
     console.log(singleProductForDetails, product_title, idInt, product_id, specification);
+    const handleAddToCart = (product_id) => {
+        addToStoredCartList(product_id);
+    }
+    const handleAddToWishList = (product_id) => {
+        addToStoredWishList(product_id);
+    }
+
+
+
+
+
+
     return (
         <div className="relative container mx-auto flex justify-center">
             <CommonHeading
@@ -62,13 +75,15 @@ const ProductDetails = () => {
 
 
                         <div className='flex gap-5'>
- {/* add to cart */}
+                            {/* add to cart */}
                             <div>
-                                <button className="text-white bg-[#9538E2] btn rounded-3xl">Add to cart <IoCartOutline /></button>
+                                <button onClick={() => handleAddToCart(product_id)}
+                                    className="text-white bg-[#9538E2] btn rounded-3xl">Add to cart <IoCartOutline /></button>
                             </div>
-{/* wish button */}
+                            {/* wish button */}
                             <div>
-                                <button> <CiHeart className="h-12 w-12 rounded-full border border-solid border-1 p-2" /></button>
+                                <button onClick={() => handleAddToWishList(product_id)}>
+                                    <CiHeart className="btn h-12 w-12 rounded-full border border-solid border-1 p-2 bg-white" /></button>
                             </div>
                         </div>
                     </div>

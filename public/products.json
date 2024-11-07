@@ -174,5 +174,85 @@
         "specification": ["6.7-inch AMOLED display", "50MP triple camera", "Snapdragon 8 Gen 1", "65W fast charging"],
         "availability": "In Stock",
         "rating": 4.4
-    }]
+    },
+    {
+        "product_id": 17,
+        "product_title": "MacBook Air M2",
+        "product_image": "https://i.ibb.co.com/QYC8Y0x/Untitled-design-2023-05-29-T011357-847.png",
+        "category": "MacBook",
+        "price": 1199.99,
+        "description": "The new MacBook Air with the powerful M2 chip, designed for portability and performance.",
+        "specification": ["M2 chip", "13.6-inch Liquid Retina display", "8GB RAM", "256GB SSD"],
+        "availability": "In Stock",
+        "rating": 4.7
+    },
+    
+    {
+        "product_id": 18,
+        "product_title": "MacBook Pro 14",
+        "product_image": "https://i.ibb.co.com/QYC8Y0x/Untitled-design-2023-05-29-T011357-847.png",
+        "category": "MacBook",
+        "price": 2499.99,
+        "description": "The new MacBook Pro 14 with M1 Pro chip for powerful performance.",
+        "specification": ["M1 Pro chip", "14-inch Retina display", "16GB RAM", "512GB SSD"],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": 19,
+        "product_title": "iPhone 14 Pro",
+        "product_image": "https://i.ibb.co.com/NYZmcNP/y-Dn3-ZSXu9e-SBxm-XQDZ4-PCF-1200-80.jpg",
+        "category": "iPhone",
+        "price": 1099.99,
+        "description": "iPhone 14 Pro with a 48MP main camera and A16 Bionic chip.",
+        "specification": ["6.1-inch Super Retina XDR display", "48MP main camera", "A16 Bionic chip", "5G enabled"],
+        "availability": "In Stock",
+        "rating": 4.8
+    },
+    {
+        "product_id": 20,
+        "product_title": "iPhone 14",
+        "product_image": "https://i.ibb.co.com/NYZmcNP/y-Dn3-ZSXu9e-SBxm-XQDZ4-PCF-1200-80.jpg",
+        "category": "iPhone",
+        "price": 799.99,
+        "description": "iPhone 14 with advanced dual-camera system and A15 Bionic chip.",
+        "specification": ["6.1-inch Super Retina XDR display", "Dual 12MP cameras", "A15 Bionic chip", "5G enabled"],
+        "availability": "In Stock",
+        "rating": 4.6
+    },
+    {
+        "product_id": 21,
+        "product_title": "iPhone 13 Pro",
+        "product_image": "https://i.ibb.co.com/NYZmcNP/y-Dn3-ZSXu9e-SBxm-XQDZ4-PCF-1200-80.jpg",
+        "category": "iPhone",
+        "price": 999.99,
+        "description": "iPhone 13 Pro with ProMotion display and A15 Bionic chip for smoother performance.",
+        "specification": ["6.1-inch Super Retina XDR display", "ProMotion technology", "A15 Bionic chip", "5G enabled"],
+        "availability": "Out of Stock",
+        "rating": 4.7
+    },
+    {
+        "product_id": 22,
+        "product_title": "iPhone SE (3rd Gen)",
+        "product_image": "https://i.ibb.co.com/NYZmcNP/y-Dn3-ZSXu9e-SBxm-XQDZ4-PCF-1200-80.jpg",
+        "category": "iPhone",
+        "price": 429.99,
+        "description": "Compact iPhone SE with powerful A15 Bionic chip and 5G capability.",
+        "specification": ["4.7-inch Retina HD display", "12MP camera", "A15 Bionic chip", "5G enabled"],
+        "availability": "In Stock",
+        "rating": 4.4
+    },
+    {
+        "product_id": 23,
+        "product_title": "iPhone 12",
+        "product_image": "https://i.ibb.co.com/NYZmcNP/y-Dn3-ZSXu9e-SBxm-XQDZ4-PCF-1200-80.jpg",
+        "category": "iPhone",
+        "price": 699.99,
+        "description": "iPhone 12 with A14 Bionic chip and edge-to-edge OLED display.",
+        "specification": ["6.1-inch Super Retina XDR display", "Dual 12MP cameras", "A14 Bionic chip", "5G enabled"],
+        "availability": "In Stock",
+        "rating": 4.5
+    }
+    
+]
     
