@@ -3,19 +3,26 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import CommonHeading from '../components/CommonHeading'; import { FaRegStar } from "react-icons/fa";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
-import { addToStoredCartList, addToStoredWishList } from '../utilities/localStorage';
+import { addToStoredCartList, addToStoredWishList, getStoredWishList } from '../utilities/localStorage';
 
 const ProductDetails = () => {
     const products = useLoaderData();
     console.log(products);
     const { id } = useParams();
     const idInt = parseInt(id);
-    const [singleProductForDetails, setProductForDetails] = useState({})
+    const [singleProductForDetails, setProductForDetails] = useState({});
+    const [isInWishList, setIsInWIshList] = useState(false);
+
     useEffect(() => {
         const singleProduct = products.find(product => product.product_id === idInt)
         setProductForDetails(singleProduct)
-        console.log(singleProduct)
-    }, [])
+        console.log(singleProduct);
+        // const wishLists = getStoredWishList();
+        // const isExist = wishLists.find (id => id == singleProduct.product_id );
+        // isExist ? setIsInWIshList(true) : setIsInWIshList(false) ;
+
+
+    }, [products, idInt])
 
     const { product_id, product_title, product_image, category,
         price, description, specification, availability, rating } = singleProductForDetails || {};
@@ -26,6 +33,7 @@ const ProductDetails = () => {
     }
     const handleAddToWishList = (product_id) => {
         addToStoredWishList(product_id);
+        setIsInWIshList(true);
     }
 
 
@@ -82,8 +90,8 @@ const ProductDetails = () => {
                             </div>
                             {/* wish button */}
                             <div>
-                                <button onClick={() => handleAddToWishList(product_id)}>
-                                    <CiHeart className="btn h-12 w-12 rounded-full border border-solid border-1 p-2 bg-white" /></button>
+                                <button disabled={isInWishList} onClick={() => handleAddToWishList(product_id)}>
+                                    <CiHeart className="h-12 w-12 rounded-full border border-solid border-1 p-2 bg-green-600" /></button>
                             </div>
                         </div>
                     </div>
