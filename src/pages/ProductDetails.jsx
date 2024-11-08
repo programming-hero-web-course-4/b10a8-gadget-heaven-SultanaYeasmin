@@ -4,8 +4,9 @@ import CommonHeading from '../components/CommonHeading'; import { FaRegStar } fr
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { addToStoredCartList, addToStoredWishList, getStoredWishList } from '../utilities/localStorage';
-
+import DocumentTitle from '../utilities/DocumentTitle';
 const ProductDetails = () => {
+    DocumentTitle("GadgetHeaven_Product_Details")
     const products = useLoaderData();
     console.log(products);
     const { id } = useParams();
@@ -17,10 +18,9 @@ const ProductDetails = () => {
         const singleProduct = products.find(product => product.product_id === idInt)
         setProductForDetails(singleProduct)
         console.log(singleProduct);
-        // const wishLists = getStoredWishList();
-        // const isExist = wishLists.find (id => id == singleProduct.product_id );
-        // isExist ? setIsInWIshList(true) : setIsInWIshList(false) ;
-
+        const wishLists = getStoredWishList();
+        const isExist = wishLists.find(id => id == singleProduct.product_id);
+        isExist ? setIsInWIshList(true) : setIsInWIshList(false);
 
     }, [products, idInt])
 
@@ -35,11 +35,6 @@ const ProductDetails = () => {
         addToStoredWishList(product_id);
         setIsInWIshList(true);
     }
-
-
-
-
-
 
     return (
         <div className="relative container mx-auto flex justify-center">
@@ -57,11 +52,12 @@ const ProductDetails = () => {
                     <div className="card-body">
                         <h2 className="card-title text-3xl font-semibold">{product_title}</h2>
                         <h5 className='text-xl font-semibold'>Price: $ {price}</h5>
-                        <button className="w-1/3 btn btn-outline btn-success bg-[#309C08]/10 text-[#309C08]">{availability ? "In Stock": "Not in stock"}</button>
+                        <button className="w-1/3 btn btn-outline btn-success bg-[#309C08]/10 text-[#309C08]">{availability ? "In Stock" : "Not in stock"}</button>
                         <p>{description}</p>
                         <h5 className='text-base font-bold'>Specification:</h5>
                         <ul className='text-base text-[#09080F]/60'>
-                            {specification && specification.map((spec, idx) => <li key={idx}> {idx + 1}. {spec}</li>)
+                            {specification &&
+                                specification.map((spec, idx) => <li key={idx}> {idx + 1}. {spec}</li>)
                             }
                         </ul>
                         <div className='flex justify-start items-center gap-2'>
@@ -69,12 +65,23 @@ const ProductDetails = () => {
                             <p><FaRegStar /></p>
                         </div>
                         <div className='flex gap-5 items-center justify-start'>
-                            <div class="rating">
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F9C004]" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F9C004]" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F9C004]" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F9C004] " checked="checked" />
-                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <div className="rating rating-md rating-half">
+                                
+                                <input type="radio" name="rating-10" className="mask mask-star-2 mask-half-1 bg-[#F9C004]" />
+                                <input type="radio" name="rating-10" className="mask mask-star-2 mask-half-2 bg-[#F9C004]" />
+                                <input type="radio" name="rating-10" className="mask mask-star-2 mask-half-1 bg-[#F9C004]" />
+                                <input type="radio" name="rating-10" className="mask mask-star-2 mask-half-2 bg-[#F9C004]" />
+                                <input type="radio" name="rating-10" className="mask mask-star-2 mask-half-1 bg-[#F9C004]" />
+                                <input type="radio" name="rating-10" className="mask mask-star-2 mask-half-2 bg-[#F9C004]" />
+                                <input type="radio" name="rating-10" className="mask mask-star-2 mask-half-1 bg-[#F9C004]" />
+                                <input type="radio" name="rating-10" className="mask mask-star-2 mask-half-2 bg-[#F9C004]" />
+                                <input
+                                    type="radio"
+                                    name="rating-10"
+                                    className="mask mask-star-2 mask-half-1 bg-[#F9C004]"
+                                    defaultChecked />
+                                <input type="radio" name="rating-10" className="mask mask-star-2 mask-half-2 bg-[#F9C004]" />
+
                             </div>
                             <div>
                                 <button className='btn btn-sm text-base font-medium'>{rating}</button>

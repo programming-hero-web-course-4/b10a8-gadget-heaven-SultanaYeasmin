@@ -1,10 +1,12 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 
 const Navbar = () => {
+    const url = useLocation();
+    console.log(url);
     return (
         
-            <div className="navbar pt-7 pb-12   bg-[#9538E2] rounded-t-2xl ">
+            <div className="navbar pt-7 pb-12 bg-[#9538E2] rounded-t-2xl ">
                 <div className="navbar-start  text-white container mx-auto">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

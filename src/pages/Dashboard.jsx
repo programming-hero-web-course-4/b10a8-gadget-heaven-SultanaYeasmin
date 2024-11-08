@@ -1,24 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import CommonHeading from '../components/CommonHeading';
-
+import DocumentTitle from '../utilities/DocumentTitle';
 import WishList from '../components/WishList';
 import CartList from '../components/CartList';
 import { getStoredCartList, getStoredWishList } from '../utilities/localStorage';
 
 const Dashboard = () => {
+    DocumentTitle("GadgetHeaven_Dashboard")
+    const [isDisabled, setIsDisabled] = useState(false);
     const [cartProducts, setCartProducts] = useState([]);
+    const [cartProducts1, setCartProducts1] = useState([]);
     const [wishProducts, setWishProducts] = useState([]);
-
     const [status, setStatus] = useState(true)
     const products = useLoaderData();
+
     const handleSortByPrice = () => {
         const sorted = [...cartProducts].sort((a,b)=>b.price - a.price);
         setCartProducts(sorted);
      }
-     console.log(cartProducts);
+    console.log(cartProducts);
      
-
     useEffect(() => {
         const storedCartList = getStoredCartList();
         const storedCartListInt = storedCartList.map(id => parseInt(id));
@@ -26,6 +28,7 @@ const Dashboard = () => {
 
         const cartListData = products.filter(product => storedCartListInt.includes(product.product_id))
         setCartProducts(cartListData);
+        setCartProducts1(cartListData);
 
         const storedWishList = getStoredWishList();
         const storedWishListInt = storedWishList.map(id => parseInt(id));
@@ -36,7 +39,7 @@ const Dashboard = () => {
     }, [])
 
     console.log(`cart-products are: ${cartProducts.length}`);
-    console.log(cartProducts);
+    console.log("first:", cartProducts,"second:" , cartProducts1, "third:mmmmm");
 
 
     const handleAddToCart = (status) => {
@@ -50,7 +53,10 @@ const Dashboard = () => {
         }
 
     }
-
+    const handlePurchaseButton = () =>{
+        setCartProducts([]);
+        setIsDisabled(true);
+    }
     return (
         <div className=''>
             <div className='bg-[#9538E2]'>
@@ -67,7 +73,7 @@ const Dashboard = () => {
                 </div>
             </div>
             {
-                status ?  <CartList  cartProducts={cartProducts} handleSortByPrice={handleSortByPrice}></CartList> :
+                status ?  <CartList  cartProducts={cartProducts} cartProducts1={cartProducts1} handleSortByPrice={handleSortByPrice} handlePurchaseButton={handlePurchaseButton} isDisabled={isDisabled} ></CartList> :
                     <WishList wishProducts={wishProducts} ></WishList>
             }
 

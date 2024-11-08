@@ -3,14 +3,15 @@ import { useNavigate } from 'react-router-dom';
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { HiOutlineOfficeBuilding } from "react-icons/hi";
-
+import DocumentTitle from '../utilities/DocumentTitle';
 
 const ContactUs = () => {
+    DocumentTitle("GadgetHeaven_Contact Us")
     const navigate = useNavigate();
     return (
         <div className='bg-slate-200 p-10'>
             <div className='container mx-auto '>
-                <h1 className="text-[60px] text-center font-extrabold " >Contact Us</h1>
+                <h1 className="text-[60px] text-center font-extrabold" >Contact Us</h1>
                 <div className="flex justify-center mt-6 "> <button className="btn btn-wide text-white bg-black" onClick={() => navigate('/')}>back to home</button></div>
             </div>
 

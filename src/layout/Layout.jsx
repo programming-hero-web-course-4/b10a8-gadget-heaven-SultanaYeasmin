@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast'
 const Layout = () => {
     return (
         <div >
-             <Toaster />
+             <Toaster  position="top-right" />
             <Navbar></Navbar>
          
             <div className="min-h-[calc(100vh-550px)] ">

@@ -1,11 +1,12 @@
 import React from 'react';
 import Banner from '../components/Banner';
 import Heading from '../components/Heading';
-
+import DocumentTitle from '../utilities/DocumentTitle';
 import { Outlet, useLoaderData, useNavigate } from 'react-router-dom';
 import Categories from '../components/Categories';
 
 const Home = () => {
+    DocumentTitle("Gadget Heaven")
     const navigate = useNavigate();
     const categories = useLoaderData();
     console.log(categories)
