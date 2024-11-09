@@ -1,27 +1,27 @@
 import { NavLink } from "react-router-dom";
-import './categories.css'
 
 const Categories = ({ categories }) => {
-    return (
-      <div >
-        {
-            categories.map((category, i)=>
-            <NavLink
-                    key={category.category}
-                    to={`/category/${category.category}`}
-                     className={({ isActive, isPending }) =>
-                          isPending ? "pending" : isActive ? "active" : ""
-                        }                      >
-               <div>
-                <button key={i} className="btn btn-wide my-6 rounded-3xl">
-                 {category.category}</button>
-                </div>
+  return (
+    <div className="border border-[#09080F]/10 p-4 rounded-2xl ">
+      {
+          categories.map((category, i)=>
+              <NavLink
+                  key={category.category}
+                  to={`/category/${category.category}`}
+                   className={({ isActive }) =>
+                       `btn btn-wide my-6 rounded-3xl text-lg ${isActive ? "bg-[#9538E2] text-white font-extrabold": "font-medium text-[#09080F]/60"}`
+                      }  >
+                   <button key={i}>
+               {category.category}
+               </button>
+              </NavLink>
+             
 
-            </NavLink>  
-            )
-        }
-      </div>
-    );
+         
+          )
+      }
+    </div>
+  );
 };
 
 export default Categories;
@@ -30,6 +30,11 @@ export default Categories;
 
 
 
+//                 style={({ isActive}) =>{
+//                   background-color:isActive ? "#9538E2" : "" ;
+// color:isActive ? "white" : "rgba(9, 8, 15, 0.6)";
+// font-size: isActive ?"18px": "18px";
+// font-weight: isActive ?"800px":"600px"/ 
 
 
 

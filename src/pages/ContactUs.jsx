@@ -11,7 +11,7 @@ const ContactUs = () => {
     return (
         <div className='bg-slate-200 p-10'>
             <div className='container mx-auto '>
-                <h1 className="text-[60px] text-center font-extrabold" >Contact Us</h1>
+                <h1 className="text-[60px] text-center font-extrabold pt-20" >Contact Us</h1>
                 <div className="flex justify-center mt-6 "> <button className="btn btn-wide text-white bg-black" onClick={() => navigate('/')}>back to home</button></div>
             </div>
 

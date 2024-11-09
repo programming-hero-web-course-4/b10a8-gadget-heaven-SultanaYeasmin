@@ -18,20 +18,22 @@ const Home = () => {
                     subtitle='Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'>
                 </Heading>
                 <div className='flex justify-center'>
-                    <button onClick={()=>navigate('/dashboard')} className="bg-white text-[#9538E2] btn btn-wide">Shop Now</button>
+                    <button 
+                    onClick={()=>navigate('/dashboard')} 
+                    className="bg-white text-[#9538E2] btn rounded-3xl">Shop Now</button>
                 </div>
                 <Banner></Banner>
             </div>
             <div className='mt-[450px] container mx-auto'>
                 <h3
-                    className='font-bold text-[40px] text-black text-center'>
+                    className='font-bold text-[40px] text-black text-center mb-12'>
                     Explore Cutting-Edge Gadgets
                 </h3>
-                <div className='grid grid-cols-[1fr_6fr] gap-6 items-start justify-between'>
-                    <div>
+                <div className='grid grid-cols-[1fr_7fr] gap-6 items-start justify-between'>
+                   
                  <Categories categories={categories} ></Categories>
                        
-                    </div>
+                  
                     <div>
 
                        <Outlet></Outlet>

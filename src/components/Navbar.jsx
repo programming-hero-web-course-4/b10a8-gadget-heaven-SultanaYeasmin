@@ -5,10 +5,12 @@ const Navbar = () => {
     const { pathname } = useLocation();
     console.log(pathname);
     return (
-        <div className={`navbar pt-7 pb-12 rounded-t-2xl ${pathname === '/' ? "bg-[#9538E2]" : "bg-white"}`}>
-            <div className="navbar-start container mx-auto">
+        
+       <div className={`${(pathname === '/statistics' || pathname === '/statistics' || pathname === '/dashboard' || pathname ==='/contact' )? "bg-white":"bg-[#9538E2]"}`}>
+         <div className={`navbar pt-7 pb-12 rounded-t-2xl container mx-auto `}>
+            <div className="navbar-start ">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-white">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-5 w-5"
@@ -30,9 +32,9 @@ const Navbar = () => {
                         <NavLink to="/dashboard"><a>Dashboard</a></NavLink>
                     </ul>
                 </div>
-                <a className={`btn btn-ghost text-xl font-bold ${pathname === '/' ? "text-white" : "text-black"}`}>Gadget Heaven</a>
+                <a className={`btn btn-ghost text-xl font-bold ${(pathname === '/statistics' || pathname === '/statistics' || pathname === '/dashboard'|| pathname ==='/contact' ) ? "text-black": "text-white" }`}>Gadget Heaven</a>
             </div>
-            <div className={`navbar-center hidden lg:flex  ${pathname === '/' ? "text-white" : "text-[#0B0B0B]/70"}`}>
+            <div className={`navbar-center hidden lg:flex  ${(pathname === '/statistics' || pathname === '/statistics' || pathname === '/dashboard'|| pathname ==='/contact' ) ?  "text-[#0B0B0B]/70" : "text-white"}`}>
                 <ul className="menu menu-horizontal px-1 gap-12 text-base font-bold">
                     <NavLink to="/"> <a>Home</a></NavLink>
                     <NavLink to="/statistics"
@@ -56,7 +58,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div class="navbar-end ">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle mr-4 bg-white">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle mr-4 bg-white border-[#0B0B0B]/10">
                     <div class="indicator">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +75,7 @@ const Navbar = () => {
                         {/* <span class="badge badge-sm indicator-item">8</span> */}
                     </div>
                 </div>
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-white">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-white border-[#0B0B0B]/10">
                     <div class="indicator">
                         <CiHeart className="h-5 w-5" />
                         {/* <span class="badge badge-sm indicator-item">8</span> */}
@@ -82,8 +84,8 @@ const Navbar = () => {
             </div>
 
         </div>
+       </div>
 
     );
 };
-
 export default Navbar;
