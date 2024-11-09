@@ -57,6 +57,8 @@ This project was built using the following technologies:
 # Live Page Link: 
 [Live Website Link](https://assignment-8-gadget-heaven-sya.netlify.app/)
 
+https://assignment-8-gadget-heaven-sya.netlify.app/
+
 ## Requirement Document
 
 [Requirement Document Link](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-SultanaYeasmin/blob/main/Batch-10_Assignment-08.pdf)
