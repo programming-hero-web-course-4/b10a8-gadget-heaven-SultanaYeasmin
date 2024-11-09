@@ -36,7 +36,7 @@ This project was built using the following technologies:
 
 ## Data Handling and Management
 
-- **Context API**: Manages global data, such as cart and wishlist items, allowing updates across components.
+- **Prop drilling**: Manages global data, such as cart and wishlist items, allowing updates across components.
 - **LocalStorage**: Provides persistence, so users' cart and wishlist selections remain after reloading the page.
 
 ## Features
