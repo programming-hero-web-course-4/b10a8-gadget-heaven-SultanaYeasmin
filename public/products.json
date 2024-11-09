@@ -24,8 +24,8 @@
     {
         "product_id": 3,
         "product_title": "iPhone 14 Pro",
-        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
-        "category": "Phones",
+        "product_image": "https://i.ibb.co.com/k6SbXJh/i-Phone-14-Pro.jpg",
+        "category": "iPhone",
         "price": 1099.99,
         "description": "iPhone 14 Pro with a new 48MP main camera and A16 Bionic chip.",
         "specification": ["6.1-inch Super Retina XDR display", "48MP main camera", "A16 Bionic chip", "5G enabled"],
@@ -35,7 +35,7 @@
     {
         "product_id": 4,
         "product_title": "Samsung Galaxy S23",
-        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "product_image": "https://i.ibb.co.com/fvqp8W3/samsunggalaxy.jpg",
         "category": "Phones",
         "price": 999.99,
         "description": "Samsung Galaxy S23 with AMOLED display and Snapdragon 8 Gen 2 processor.",
@@ -46,7 +46,7 @@
     {
         "product_id": 5,
         "product_title": "Google Pixel 7",
-        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "product_image": "https://i.ibb.co.com/ygzdgJ6/Google-Pixel-7.jpg",
         "category": "Phones",
         "price": 899.99,
         "description": "Google Pixel 7 with Google Tensor chip and exceptional low-light camera.",
@@ -57,7 +57,7 @@
     {
         "product_id": 6,
         "product_title": "OnePlus 11",
-        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "product_image": "https://i.ibb.co.com/ZNNnH0W/One-Plus-11.jpg",
         "category": "Phones",
         "price": 799.99,
         "description": "OnePlus 11 with fast performance and ultra-smooth display.",
@@ -68,7 +68,7 @@
     {
         "product_id": 7,
         "product_title": "Sony Xperia 1 IV",
-        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "product_image": "https://i.ibb.co.com/VjvKVYv/Sony-Xperia-1-IV.jpg",
         "category": "Phones",
         "price": 1199.99,
         "description": "Sony Xperia 1 IV with 4K OLED display and professional-grade camera.",
@@ -79,7 +79,7 @@
     {
         "product_id": 8,
         "product_title": "Xiaomi Mi 12",
-        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "product_image": "https://i.ibb.co.com/jT8NZZ6/xiaomi-12.jpg",
         "category": "Phones",
         "price": 749.99,
         "description": "Xiaomi Mi 12 with powerful processor and exceptional battery life.",
@@ -101,7 +101,7 @@
     {
         "product_id": 10,
         "product_title": "Samsung Galaxy Watch 5",
-        "product_image": "https://i.ibb.co.com/dGh5gsP/kiran-ck-Uk-O7-K1-CPFS8-unsplash-1.jpg",
+        "product_image": "https://i.ibb.co.com/JvTbgZX/Samsung-Galaxy-Watch-5.jpg",
         "category": "Smartwatches",
         "price": 279.99,
         "description": "Samsung Galaxy Watch 5 with health monitoring and 80-hour battery life.",
@@ -145,7 +145,7 @@
     {
         "product_id": 14,
         "product_title": "Motorola Moto G Power",
-        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "product_image": "https://i.ibb.co.com/VQ2YLqG/Motorola-Moto-G-Power.png",
         "category": "Phones",
         "price": 249.99,
         "description": "Motorola Moto G Power with a 5000mAh battery for all-day use.",
@@ -156,7 +156,7 @@
     {
         "product_id": 15,
         "product_title": "Asus Zenfone 9",
-        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "product_image": "https://i.ibb.co.com/6NBQH6w/sasus.png",
         "category": "Phones",
         "price": 699.99,
         "description": "Asus Zenfone 9 with compact design and flagship performance.",
@@ -167,7 +167,7 @@
     {
         "product_id": 16,
         "product_title": "Realme GT 2 Pro",
-        "product_image": "https://i.ibb.co.com/8mSQBbH/rahul-chakraborty-xs-Gxht-Asf-SA-unsplash.jpg",
+        "product_image": "https://i.ibb.co.com/r6fQ3Pk/Realme-GT-2-Pro.jpg",
         "category": "Phones",
         "price": 599.99,
         "description": "Realme GT 2 Pro with Snapdragon 8 Gen 1 and high refresh rate display.",
@@ -190,7 +190,7 @@
     {
         "product_id": 18,
         "product_title": "MacBook Pro 14",
-        "product_image": "https://i.ibb.co.com/QYC8Y0x/Untitled-design-2023-05-29-T011357-847.png",
+        "product_image": "https://i.ibb.co.com/SVM91x7/Mac-Book-Pro-14.jpg",
         "category": "MacBook",
         "price": 2499.99,
         "description": "The new MacBook Pro 14 with M1 Pro chip for powerful performance.",
@@ -200,8 +200,8 @@
     },
     {
         "product_id": 19,
-        "product_title": "iPhone 14 Pro",
-        "product_image": "https://i.ibb.co.com/NYZmcNP/y-Dn3-ZSXu9e-SBxm-XQDZ4-PCF-1200-80.jpg",
+        "product_title": "iPhone 14 ProMax",
+        "product_image": "https://i.ibb.co.com/NthkFvg/i-Phone-14-Pro-Max.webp",
         "category": "iPhone",
         "price": 1099.99,
         "description": "iPhone 14 Pro with a 48MP main camera and A16 Bionic chip.",
@@ -212,7 +212,7 @@
     {
         "product_id": 20,
         "product_title": "iPhone 14",
-        "product_image": "https://i.ibb.co.com/NYZmcNP/y-Dn3-ZSXu9e-SBxm-XQDZ4-PCF-1200-80.jpg",
+        "product_image": "https://i.ibb.co.com/gWSNzqb/i-Phone-14.webp",
         "category": "iPhone",
         "price": 799.99,
         "description": "iPhone 14 with advanced dual-camera system and A15 Bionic chip.",
@@ -234,7 +234,7 @@
     {
         "product_id": 22,
         "product_title": "iPhone SE (3rd Gen)",
-        "product_image": "https://i.ibb.co.com/NYZmcNP/y-Dn3-ZSXu9e-SBxm-XQDZ4-PCF-1200-80.jpg",
+        "product_image": "https://i.ibb.co.com/n3wyDq6/i-Phone-SE-3rd-Gen.jpg",
         "category": "iPhone",
         "price": 429.99,
         "description": "Compact iPhone SE with powerful A15 Bionic chip and 5G capability.",
@@ -245,7 +245,7 @@
     {
         "product_id": 23,
         "product_title": "iPhone 12",
-        "product_image": "https://i.ibb.co.com/NYZmcNP/y-Dn3-ZSXu9e-SBxm-XQDZ4-PCF-1200-80.jpg",
+        "product_image": "https://i.ibb.co.com/brym1Ws/1533-48820.jpg",
         "category": "iPhone",
         "price": 699.99,
         "description": "iPhone 12 with A14 Bionic chip and edge-to-edge OLED display.",
