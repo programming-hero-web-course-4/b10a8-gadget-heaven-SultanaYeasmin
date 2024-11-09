@@ -1,5 +1,6 @@
 import React from 'react';
 import DocumentTitle from '../utilities/DocumentTitle';
+import CommonHeading from '../components/CommonHeading';
 import {
   ComposedChart,
   Line,
@@ -44,7 +45,19 @@ const Statistics = () => {
   DocumentTitle("GadgetHeaven_Statistics")
 
   return (
+   <div>   
+    <div className='bg-[#9538E2]'>
+    <div className='flex justify-center text-white py-10' >
+        <CommonHeading
+            title='Statistics'
+            subtitle='Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'
+        ></CommonHeading>
+    </div>
+
+   
+</div>
    <div className='h-[500px] container m-20 mx-auto'>
+    
       <ResponsiveContainer width="100%" height="100%" >
         <ComposedChart
         width={500}
@@ -69,7 +82,7 @@ const Statistics = () => {
           <Scatter dataKey="rating" fill="red" />
         </ComposedChart>
       </ResponsiveContainer>
-      </div>
+      </div>   </div> 
   );
 };
 

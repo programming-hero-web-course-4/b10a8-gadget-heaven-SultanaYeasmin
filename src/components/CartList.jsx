@@ -3,7 +3,7 @@ import './../utilities/getTotalCost'
 import CartSingleData from './CartSingleData';
 import { getTotalCost } from './../utilities/getTotalCost';
 import Group from './../assets/Group.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';import { ImSortAmountDesc } from "react-icons/im";
 
 const CartList = ({ cartProducts, cartProducts1, handleSortByPrice, handlePurchaseButton, isDisabled }) => {
     const navigate = useNavigate();
@@ -24,9 +24,11 @@ const CartList = ({ cartProducts, cartProducts1, handleSortByPrice, handlePurcha
                 <h5 className='font-bold'>Cart</h5>
                 <div className='flex items-center justify-end'>
                     <h5 className='font-bold mr-20'>Total cost:   $ {cost} </h5>
-                    <button onClick={handleSortByPrice}
-                        className="btn font-semibold rounded-3xl text-[#9538E2] mx-10 ">Sort by Price
+                  
+                   <button onClick={handleSortByPrice}
+                        className="btn font-semibold rounded-3xl text-[#9538E2] mx-10 ">Sort by Price<ImSortAmountDesc />
                     </button>
+                 
                     <button disabled={isDisabled} onClick={() => {
                         document.getElementById('my_modal_5').showModal()
                         handlePurchaseButton()

@@ -6,7 +6,7 @@ const Navbar = () => {
     console.log(pathname);
     return (
         
-       <div className={`${(pathname === '/statistics' || pathname === '/statistics' || pathname === '/dashboard' || pathname ==='/contact' )? "bg-white":"bg-[#9538E2]"}`}>
+       <div className={`${( pathname==="/category/All%20Products" || pathname === '/category/Laptops' || pathname ==='/category/Phones'|| pathname ==='/category/Smartwatches'|| pathname ==='/category/iPhone'|| pathname ==='/category/MacBook'|| pathname ==='/category/Accessories'  || pathname ==='/')? "bg-[#9538E2]": "bg-white"}`}>
          <div className={`navbar pt-7 pb-12 rounded-t-2xl container mx-auto `}>
             <div className="navbar-start ">
                 <div className="dropdown">
@@ -32,9 +32,9 @@ const Navbar = () => {
                         <NavLink to="/dashboard"><a>Dashboard</a></NavLink>
                     </ul>
                 </div>
-                <a className={`btn btn-ghost text-xl font-bold ${(pathname === '/statistics' || pathname === '/statistics' || pathname === '/dashboard'|| pathname ==='/contact' ) ? "text-black": "text-white" }`}>Gadget Heaven</a>
+                <a className={`btn btn-ghost text-xl font-bold ${(pathname === '/category/Laptops' || pathname === '/category/All%20Products' || pathname ==='/category/Phones'|| pathname ==='/category/Smartwatches'|| pathname ==='/category/iPhone'|| pathname ==='/category/MacBook'|| pathname ==='/category/Accessories'  || pathname ==='/' ) ? "text-white": "text-black" }`}>Gadget Heaven</a>
             </div>
-            <div className={`navbar-center hidden lg:flex  ${(pathname === '/statistics' || pathname === '/statistics' || pathname === '/dashboard'|| pathname ==='/contact' ) ?  "text-[#0B0B0B]/70" : "text-white"}`}>
+            <div className={`navbar-center hidden lg:flex  ${(pathname === '/category/Laptops' || pathname === '/category/All%20Products' || pathname ==='/category/Phones'|| pathname ==='/category/Smartwatches'|| pathname ==='/category/iPhone'|| pathname ==='/category/MacBook'|| pathname ==='/category/Accessories'  || pathname ==='/' ) ? "text-white": "text-[#0B0B0B]/70" }`}>
                 <ul className="menu menu-horizontal px-1 gap-12 text-base font-bold">
                     <NavLink to="/"> <a>Home</a></NavLink>
                     <NavLink to="/statistics"

@@ -35,14 +35,19 @@ const ProductDetails = () => {
         addToStoredWishList(product_id);
         setIsInWIshList(true);
     }
-
+    const {abc} = useParams();
+    console.log(abc)
     return (
-        <div className="relative container mx-auto flex justify-center">
+        <div>
+            <div className="relative flex justify-center bg-[#9538E2] pb-52 ">
+            
+            <div className='mx-auto container py-10 text-white '>
             <CommonHeading
                 title='Product Details'
                 subtitle='Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all'
             ></CommonHeading>
-            <div className="absolute top-[180px]">
+            </div>
+            <div className="absolute top-[250px] container mx-auto">
                 <div className="card card-side bg-base-100 shadow-xl h-[550px] p-8">
                     <figure>
                         <img className='h-[500px] w-[420px] object-fill'
@@ -50,11 +55,11 @@ const ProductDetails = () => {
                             alt={product_title} />
                     </figure>
                     <div className="card-body">
-                        <h2 className="card-title text-3xl font-semibold">{product_title}</h2>
-                        <h5 className='text-xl font-semibold'>Price: $ {price}</h5>
-                        <button className="w-1/3 btn btn-outline btn-success bg-[#309C08]/10 text-[#309C08]">{availability ? "In Stock" : "Not in stock"}</button>
-                        <p>{description}</p>
-                        <h5 className='text-base font-bold'>Specification:</h5>
+                        <h2 className="card-title text-3xl font-semibold ">{product_title}</h2>
+                        <h5 className='text-xl font-semibold text-[#09080F]/80'>Price: $ {price}</h5>
+                        <button className="w-1/3 btn btn-sm  btn-outline btn-success bg-[#309C08]/10 text-[#309C08]">{availability ? "In Stock" : "Not in stock"}</button>
+                        <p className='text-[#09080F]/60'>{description}</p>
+                        <h5 className="text-base font-bold ">Specification:</h5>
                         <ul className='text-base text-[#09080F]/60'>
                             {specification &&
                                 specification.map((spec, idx) => <li key={idx}> {idx + 1}. {spec}</li>)
@@ -98,12 +103,16 @@ const ProductDetails = () => {
                             {/* wish button */}
                             <div>
                                 <button disabled={isInWishList} onClick={() => handleAddToWishList(product_id)}>
-                                    <CiHeart className="h-12 w-12 rounded-full border border-solid border-1 p-2 bg-green-600" /></button>
+                                    <CiHeart className="h-12 w-12 rounded-full border border-solid border-1 p-2 border-[#09080F]/5" /></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div className='h-[500px] bg-slate-50'>
+            
+        </div>
         </div>
 
     );

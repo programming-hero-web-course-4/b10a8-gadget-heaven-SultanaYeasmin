@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { RxCross1 } from "react-icons/rx";
 import WishSingleData from './WishSingleData';
 
 const WishList = ({ wishProducts }) => {

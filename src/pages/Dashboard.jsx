@@ -68,8 +68,8 @@ const Dashboard = () => {
                 </div>
 
                 <div className='flex justify-center mt-8'>
-                    <button onClick={() => handleAddToCart(true)} className='btn btn-wide mr-9 rounded-[32px]'>Cart</button>
-                    <button onClick={() => handleAddToCart(false)} className='btn btn-wide rounded-[32px] mb-8'>Wishlist</button>
+                    <button onClick={() => handleAddToCart(true)} className={`btn btn-wide mr-9 rounded-[32px] ${status ? "bg-white text-[#9538E2]" : "bg-[#9538E2] text-white"}`}>Cart</button>
+                    <button onClick={() => handleAddToCart(false)} className={`btn btn-wide rounded-[32px] mb-8 ${status ?  "bg-[#9538E2] text-white" : "bg-white text-[#9538E2]"}`}>Wishlist</button>
                 </div>
             </div>
             {
